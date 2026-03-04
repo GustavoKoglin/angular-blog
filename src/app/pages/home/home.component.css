@@ -1,11 +1,37 @@
-.container__articles{
-  margin-top: 30px;
-
-  @media(min-width: 700px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+.container__articles {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.articles__main {
+  width: 100%;
+}
 
+.articles__others {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .container__articles {
+    flex-direction: row;
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+
+  .articles__main {
+    flex: 1.2;
+  }
+
+  .articles__others {
+    flex: 1;
+  }
+}
